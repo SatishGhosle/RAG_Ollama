@@ -16,7 +16,7 @@ rag_o = Rag(folder = os.environ["DATASET_PATH"])
 data_dict = rag_o.prepare_chrm_dict()
 collection_instance = rag_o.create_collection(chroma_path = os.environ["CHROMA_PATH"],
                         embedding_fun = "all-MiniLM-L6-v2",
-                        collection_name = "car_dealer",
+                        collection_name = "collection_name",
                         data_dict = data_dict,
                         dist_metric = "cosine"
                         )
