@@ -7,9 +7,10 @@ I have used llama3.1 LLM in this project. However, one can use advanced models b
 
 Must do points:
 1. Install Ollama to run LLM locally.
-2. Set CHROMA_PATH = Provide ChromaDB Path, DATASET_PATH = Provide DAtaset Path in .env file
+2. Set CHROMA_PATH = Provide ChromaDB Path and DATASET_PATH = Provide Dataset Path in .env file
 3. Provide embedding function of your choice and a name for your collection which will be created in ChromaDB in app.py. 
-4. Run app.py program to create embeddings and collection in ChromaDB. This will create a directory with SQLite and Collection that is used for RAG. 
+4. Run "gen_context.py" program to create embeddings and collection in ChromaDB. This will create a directory with SQLite and Collection that is used for RAG. 
 5. After creating embeddings and collection, you can run streamlit program using "streamlit run ollama.py" in command prompt. 
 
 Below is the demo of output.
+![alt text](image.png)
